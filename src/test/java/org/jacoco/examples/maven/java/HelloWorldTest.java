@@ -17,6 +17,8 @@ public class HelloWorldTest {
 	@Test
 	public void testGetMessage() {
 		assertEquals("Hello World!", subject.getMessage(false));
+		/* Adding new line below */
+		assertEquals("WELCOME TO MY WORLD!", subject.getMessage(false));
 	}
 
 }
