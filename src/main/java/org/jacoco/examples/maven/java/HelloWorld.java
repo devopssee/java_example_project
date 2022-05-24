@@ -6,7 +6,7 @@ public class HelloWorld {
 		if (bigger) {
 			return "Hello Universe!";
 		} else {
-			return "Hello Ashok, Welcome to the World!";
+			return "Hello Ashok, Glad to see you";
 		}
 	}
 
