@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+import java.lang.String;
 
 public class HelloWorldTest {
 
@@ -16,9 +17,11 @@ public class HelloWorldTest {
 
 	@Test
 	public void testGetMessage() {
-		assertEquals("Hello World!", subject.getMessage(false));
-		/* Adding new line below */
-		assertEquals("WELCOME TO THE WORLD ASHOK!", subject.getMessage(false));
+		/*assertEquals("Hello Ashok, Glad to see you!", subject.getMessage(false));
+		 Adding new line below 
+		assertEquals("WELCOME TO THE WORLD ASHOK!", subject.getMessage(false));*/
+		subject.getMessage("Hello Ashok, Glad to see you!", false);
+		subject.getMessage("WELCOME TO THE WORLD ASHOK!", true);
 	}
 
 }
